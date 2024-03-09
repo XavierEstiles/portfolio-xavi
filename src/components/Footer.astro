@@ -2,7 +2,7 @@
 import Icon from '../components/Icon.astro';
 ---
 
-<footer>
+<footer class="opacity-30">
 	<div class="group">
 		<p>
 			Designed & Developed by Xavier Estil·les Beltrán.
@@ -22,26 +22,13 @@ import Icon from '../components/Icon.astro';
 		margin-top: auto;
 		padding: 3rem 2rem 3rem;
 		text-align: center;
-		color: var(--gray-400);
-		font-size: var(--text-sm);
+		
 	}
-
-	footer a {
-		color: var(--gray-400);
-		text-decoration: 1px solid underline transparent;
-		text-underline-offset: 0.25em;
-		transition: text-decoration-color var(--theme-transition);
-	}
-
-	footer a:hover,
-	footer a:focus {
-		text-decoration-color: currentColor;
-	}
-
 	.group {
 		display: flex;
 		flex-direction: column;
 		gap: 0.5rem;
+		font-size: 0.875rem;
 	}
 
 	.socials {
