@@ -1,24 +1,49 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Icon from '../components/Icon.astro';
+import Pill from '../components/Pill.astro';
 import Badge from '../components/Badge.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Xavier Estil·les Beltrán">
 	<main>
-		<section class="w-full mx-auto lg:w-[740px]  py-40">
-			<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
-				Hey, soy Xavier 
-				<a 
-					href="https://www.linkedin.com/in/xavier-estil-les-beltr%C3%A1n/"
-					class="flex justify-center items-center"
-				>
-					<Badge>Disponible para trabajar</Badge>
-				</a>
-			</h1>
-			<h2 class="text-xl opacity-80">
-				+2 años de experiencia. Desarollador full stack y android. De Málaga, España. Programador estusiasta y creativo.
-			</h2>
+		<section class="intro w-full mx-auto lg:w-[1000px] flex py-40 items-center">
+			<div class="">
+				<h1 class="text-white text-6xl font-bold pb-5">
+					Hola, mi nombre es Xavier Estil·les
+				</h1>
+				<h2 class="text-xl opacity-80 w-[540px]">
+					Soy un desarrollador creativo que actualmente reside en Málaga, España.
+				</h2>
+				<div class="roles">
+					<Pill><Icon icon="code" size="1.33em" /> Backend</Pill>
+					<Pill><Icon icon="android-logo" size="1.33em" /> Android</Pill>
+					<Pill><Icon icon="web" size="1.33em" /> Web</Pill>
+				</div>
+			</div>
+			<img 
+				src="/assets/2024-03-09.jpg" 
+				alt=""
+			>
+			
 		</section>
+		<!-- <section class="about w-full mx-auto lg:w-[1000px] py-40">
+			<h1 class="text-white text-6xl font-bold pb-5">¿Quien soy?</h1>
+		</section>-->
 	</main>
 </Layout>
+<style>
+	.intro img{
+		width: 400px;
+		height: 400px;
+		margin-left: 30px;
+		object-fit: cover;
+		object-position: top;
+		border-radius: 3rem;
+	}
 
+	.roles {
+		margin-top: 30px;
+		display: flex;
+	}
+</style>
